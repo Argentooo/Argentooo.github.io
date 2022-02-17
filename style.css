@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-logo {
+  float: left;
+  margin-right: 500px;
+}
+
+.header-navigation {
+  background-color: rgb(83, 6, 146);
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+.menu-item {
+  display: inline-block;
+}
+.menu-link {
+  text-transform: uppercase;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: rgb(83, 6, 146);
+}
