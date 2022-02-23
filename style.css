@@ -17,12 +17,6 @@ body {
   text-decoration: none;
 }
 
-.header-logo {
-  float: left;
-  margin-right: 500px;
-  font-size: 16px;
-}
-
 .header-navigation {
   background-image: url(/img/kosmo.png);
   background-size: 1400px;
@@ -40,9 +34,11 @@ body {
   margin: 0;
   list-style: none;
   font-size: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .menu-item {
-  display: inline-block;
 }
 .menu-link {
   text-transform: uppercase;
@@ -53,4 +49,19 @@ body {
 
 .menu-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.header-logo {
+  display: flex;
+  font-size: 16;
+  margin-bottom: -17px;
+  text-transform: uppercase;
+}
+
+.intro {
+  padding: 60px 0;
+}
+.intro-inner {
+  display: flex;
+  gap: 20px;
 }
