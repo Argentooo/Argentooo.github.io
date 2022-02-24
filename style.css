@@ -1,9 +1,14 @@
+:root {
+  --accent: rgb(48, 11, 146);
+}
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -12,16 +17,20 @@ body {
   margin: 0;
 }
 
+.header {
+  background-color: var(--accent);
+}
+
 .header a {
   color: #fff;
   text-decoration: none;
 }
 
 .header-navigation {
-  background-image: url(/img/kosmo.png);
-  background-size: 1400px;
-  color: white;
   padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container {
@@ -30,33 +39,26 @@ body {
   padding: 0 10px;
 }
 
+.header-logo {
+  text-transform: uppercase;
+}
+
 .menu {
   padding: 0;
   margin: 0;
   list-style: none;
-  font-size: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 .menu-item {
 }
 .menu-link {
   text-transform: uppercase;
   padding: 15px;
-  font-size: 16px;
   transition: 0.4s;
 }
 
 .menu-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.header-logo {
-  display: flex;
-  font-size: 16;
-  margin-bottom: -17px;
-  text-transform: uppercase;
 }
 
 .intro {
