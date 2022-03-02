@@ -22,8 +22,9 @@ body {
 
 .header {
   background-color: var(--accent);
+  width: 100%;
+  position: fixed;
 }
-
 .header a {
   color: var(--pure-white);
   text-decoration: none;
@@ -35,7 +36,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .container {
   width: 1140px;
   margin: 0 auto;
