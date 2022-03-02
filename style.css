@@ -96,6 +96,7 @@ body {
 
 .contacts {
   margin-bottom: 60px;
+  margin-top: -20px;
 }
 
 .section-title {
@@ -111,6 +112,10 @@ body {
   display: flex;
   justify-content: center;
   gap: 25px;
+}
+.contacts h4 {
+  text-align: center;
+  margin: 10px 50px;
 }
 
 .skills {
