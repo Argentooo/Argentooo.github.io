@@ -1,6 +1,6 @@
 :root {
-  --accent: rgb(48, 11, 146);
-  --accent-light: rgb(96, 70, 165);
+  --accent: rgb(114, 75, 224);
+  --accent-light: rgb(130, 104, 196);
   --pure-white: rgb(255, 255, 255);
 }
 
@@ -21,7 +21,8 @@ body {
 }
 
 .header {
-  background-color: var(--accent);
+  /*background-color: var(--accent);*/
+  background-image: url(/img/blue.jpg);
   width: 100%;
   position: fixed;
 }
@@ -113,8 +114,9 @@ body {
 }
 
 .skills {
-  background-color: var(--accent);
+  /*background-color: var(--accent);*/
   color: var(--pure-white);
+  background-image: url(/img/blue.jpg);
 }
 
 .skills ul {
@@ -137,16 +139,20 @@ body {
   width: 60%;
   margin: 0 auto;
   text-align: left;
-  background-color: var(--accent);
+  /*background-color: var(--accent);*/
+  background-image: url(/img/blue.jpg);
   color: var(--pure-white);
   border-radius: 8px;
 }
 
 .edu {
-  background-color: var(--accent);
+  /* background-color: var(--accent);*/
+  background-image: url(/img/blue.jpg);
   color: var(--pure-white);
 }
-
+.edu h2 {
+  padding: -40px 0;
+}
 .footer {
   text-align: center;
 }
