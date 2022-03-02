@@ -1,6 +1,6 @@
 :root {
-  --accent: rgb(48, 11, 146);
-  --accent-light: rgb(96, 70, 165);
+  --accent: rgb(114, 75, 224);
+  --accent-light: rgb(130, 104, 196);
   --pure-white: rgb(255, 255, 255);
 }
 
@@ -21,9 +21,11 @@ body {
 }
 
 .header {
-  background-color: var(--accent);
+  /*background-color: var(--accent);*/
+  background-image: url(/img/blue.jpg);
+  width: 100%;
+  position: fixed;
 }
-
 .header a {
   color: var(--pure-white);
   text-decoration: none;
@@ -35,7 +37,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -95,6 +96,7 @@ body {
 
 .contacts {
   margin-bottom: 60px;
+  margin-top: -20px;
 }
 
 .section-title {
@@ -111,10 +113,15 @@ body {
   justify-content: center;
   gap: 25px;
 }
+.contacts h4 {
+  text-align: center;
+  margin: 10px 50px;
+}
 
 .skills {
-  background-color: var(--accent);
+  /*background-color: var(--accent);*/
   color: var(--pure-white);
+  background-image: url(/img/blue.jpg);
 }
 
 .skills ul {
@@ -137,16 +144,20 @@ body {
   width: 60%;
   margin: 0 auto;
   text-align: left;
-  background-color: var(--accent);
+  /*background-color: var(--accent);*/
+  background-image: url(/img/blue.jpg);
   color: var(--pure-white);
   border-radius: 8px;
 }
 
 .edu {
-  background-color: var(--accent);
+  /* background-color: var(--accent);*/
+  background-image: url(/img/blue.jpg);
   color: var(--pure-white);
 }
-
+.edu h2 {
+  padding: -40px 0;
+}
 .footer {
   text-align: center;
 }
