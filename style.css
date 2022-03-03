@@ -1,6 +1,6 @@
 :root {
   --accent: rgb(114, 75, 224);
-  --accent-light: rgb(130, 104, 196);
+  --accent-light: rgb(84, 47, 179);
   --pure-white: rgb(255, 255, 255);
 }
 
@@ -158,6 +158,35 @@ body {
 .edu h2 {
   padding: -40px 0;
 }
+
+.edu li {
+  /*padding: 10px 15px;*/
+  background-color: var(--accent-light);
+  border-radius: 5px;
+}
+
+.title-wrap {
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  padding: 10px 10px 5px 30px;
+  margin-right: 40px;
+  display: inline-block;
+  font-size: 20px;
+}
+.title::before {
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  content: "";
+  background-image: url(/img/iconmonstr-school-21.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .footer {
   text-align: center;
 }
