@@ -1,6 +1,6 @@
 :root {
   --accent: rgb(114, 75, 224);
-  --accent-light: rgb(130, 104, 196);
+  --accent-light: rgb(84, 47, 179);
   --pure-white: rgb(255, 255, 255);
 }
 
@@ -23,8 +23,6 @@ body {
 .header {
   /*background-color: var(--accent);*/
   background-image: url(/img/blue.jpg);
-  width: 100%;
-  position: fixed;
 }
 .header a {
   color: var(--pure-white);
@@ -158,6 +156,174 @@ body {
 .edu h2 {
   padding: -40px 0;
 }
+
+.edu li {
+  /*padding: 10px 15px;*/
+  background-color: var(--accent-light);
+  border-radius: 5px;
+}
+
+.title-wrap {
+  text-align: center;
+}
+
+.title {
+  position: relative;
+  padding: 10px 10px 5px 30px;
+  margin-right: 40px;
+  display: inline-block;
+  font-size: 20px;
+}
+.title::before {
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  content: "";
+  background-image: url(/img/iconmonstr-school-21.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .footer {
   text-align: center;
+}
+
+@media (width: 320px) {
+  .container {
+    width: 320px;
+    padding: 0 5px;
+    overflow-x: hidden;
+  }
+  .header-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .menu-link {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-left {
+    margin-right: 190px;
+  }
+  .example pre {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (width: 768px) {
+  .container {
+    width: 750px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .header-navigation {
+    padding: 5px 0;
+    display: flex;
+    font-size: 14px;
+  }
+  .intro-inner {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .intro-left {
+    width: 15%;
+    margin-left: 70px;
+  }
+  .intro-right {
+    width: 65%;
+  }
+}
+
+@media (width: 375px) {
+  .container {
+    width: 375px;
+    padding: 0 5px;
+    overflow-x: hidden;
+  }
+  .header-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .menu-link {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-left {
+    margin-right: 190px;
+  }
+  .example pre {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (width: 425px) {
+  .container {
+    width: 425px;
+    padding: 0 5px;
+    overflow-x: hidden;
+  }
+  .header-navigation {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .menu-link {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .intro-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .intro-left {
+    margin-right: 190px;
+  }
+  .example pre {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
