@@ -189,7 +189,7 @@ body {
   text-align: center;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 500px) {
   .container {
     max-width: 320px;
     padding: 0 5px;
@@ -226,7 +226,6 @@ body {
     justify-content: center;
   }
 }
-
 @media (width: 768px) {
   .container {
     width: 750px;
